@@ -1,0 +1,69 @@
+[
+    ["school", "class", [], "name", "1"],
+    ["school", "stream", [], "name", "Red"],
+    ["school", "stream", [], "id", "r"],
+    ["school", "exam", [], "name", "Mid Exam"],
+    ["school", "sitting", [], "date", "2021-02-1"],
+
+    ["school", "stage", [], "year", "2021"],
+    
+    ["school", "school", [], "id", "KAPS"],
+    ["school", "school", [], "name", "Kiserian Adventist Primary School"],
+    ["school", "progress", [], "progress", null],
+    
+    {
+        "class_name":"\\capture\\csv",
+        "args":[
+            "t1", 
+            "/mutall_projects/school/v/data/loadables/scores/GRADE 1  DISTINCTION EXAM FEB 2021 Red.csv",
+            [],
+            ",",  
+            -1,
+            4
+        ]
+    },
+
+    ["school", "student", [], "name", ["capture\\lookup","t1", 0]],
+
+    ["school", "performance", ["maths"], "out_of", 25],
+    ["school", "subject", ["maths"], "id", "maths"],
+    ["school", "subject", ["maths"], "name", "Mathematics"],
+    ["school", "score", ["maths"], "value", ["capture\\lookup","t1", 1]],
+    ["school", "score", ["maths"], "percent", ["capture\\lookup","t1", 2]],
+    ["school", "score", ["maths"], "grade", ["capture\\lookup","t1", 3]],
+    
+    ["school", "subject", ["eng"], "id", "eng"],
+    ["school", "subject", ["eng"], "name", "English"],
+    ["school", "score", ["eng"], "value", ["capture\\lookup","t1", 4]],
+    ["school", "score", ["eng"], "percent", ["capture\\lookup","t1", 5]],
+    ["school", "score", ["eng"], "grade", ["capture\\lookup","t1", 6]],
+    
+    ["school", "performance", ["hyg"], "out_of", 15],
+    ["school", "subject", ["hyg"], "id", "hyg"],
+    ["school", "subject", ["hyg"], "name", "Hygiene"],
+    ["school", "score", ["hyg"], "value", ["capture\\lookup","t1", 7]],
+    ["school", "score", ["hyg"], "percent", ["capture\\lookup","t1", 8]],
+    ["school", "score", ["hyg"], "grade", ["capture\\lookup","t1", 9]],
+    
+    ["school", "performance", ["env"], "out_of", 15],
+    ["school", "subject", ["env"], "id", "env"],
+    ["school", "subject", ["env"], "name", "Environmental"],
+    ["school", "score", ["env"], "value", ["capture\\lookup","t1", 10]],
+    ["school", "score", ["env"], "percent", ["capture\\lookup","t1", 11]],
+    ["school", "score", ["env"], "grade", ["capture\\lookup","t1", 12]],
+ 
+    ["school", "performance", ["kis"], "out_of", 50],
+    ["school", "subject", ["kis"], "id", "kiswa"],
+    ["school", "subject", ["kis"], "name", "Kiswahili"],
+    ["school", "score", ["kis"], "value", ["capture\\lookup","t1", 13]],
+    ["school", "score", ["kis"], "percent", ["capture\\lookup","t1", 14]],
+    ["school", "score", ["kis"], "grade", ["capture\\lookup","t1", 15]],
+    
+    ["school", "performance", ["cre"], "out_of", 15],
+    ["school", "subject", ["cre"], "id", "cre"],
+    ["school", "subject", ["cre"], "name", "ChristianReligiousEducation"],
+    ["school", "score", ["cre"], "value", ["capture\\lookup","t1", 16]],
+    ["school", "score", ["cre"], "percent", ["capture\\lookup","t1", 17]],
+    ["school", "score", ["cre"], "grade", ["capture\\lookup","t1", 18]]
+    
+]

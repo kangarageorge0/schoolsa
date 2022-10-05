@@ -1,0 +1,92 @@
+[
+    ["school", "grade", [], "name", "2"],
+    ["school", "stream", [], "name", "yellow"],
+    ["school", "exam", [], "name", "Mid Exam"],
+    ["school", "sitting", [], "date", "2021-02-15"],
+
+    ["school", "stage", [], "year", "2021"],
+    
+    ["school", "school", [], "id", "KAPS"],
+    ["school", "school", [], "name", "Kiserian Adventist Primary School"],
+    ["school", "progress", [], "progress", null],
+    
+    {
+        "class_name":"\\capture\\csv",
+        "args":[
+            "t1", 
+            "/mutall_projects/school/v/data_csv/GRADE 2  DISTINCTION MID FEB EXAM yellow 1.csv",
+            [],
+            ",",  
+            -1,
+            2
+        ]
+    },
+
+    ["school", "stuff", [], "codes", ["capture\\lookup","t1", 0]],
+    ["school", "stuff", [], "user", ["capture\\lookup","t1", 1]],
+
+    ["school", "subject", ["maths"], "id", "maths"],
+    ["school", "subject", ["maths"], "name", "Mathematics"],
+    ["school", "score", ["maths"], "value", ["capture\\lookup","t1", 2]],
+    
+    ["school", "subject", ["eng"], "id", "eng"],
+    ["school", "subject", ["eng"], "name", "English"],
+    ["school", "score", ["eng"], "value", ["capture\\lookup","t1", 3]],
+    
+    ["school", "subject", ["e_lit"], "id", "englit"],
+    ["school", "subject", ["e_lit"], "name", "English literature & composition"],
+    ["school", "score", ["e_lit"], "value", ["capture\\lookup","t1", 4]],
+    
+    ["school", "subject", ["kis"], "id", "kiswa"],
+    ["school", "subject", ["kis"], "name", "Kiswahili"],
+    ["school", "score", ["kis"], "value", ["capture\\lookup","t1", 5]],
+    
+    ["school", "subject", ["fkis"], "id", "fkis"],
+    ["school", "subject", ["fkis"], "name", "foreign kis"],
+    ["school", "score", ["fkis"], "value", ["capture\\lookup","t1", 6]],
+   
+    ["school", "subject", ["sci"], "id", "sci"],
+    ["school", "subject", ["sci"], "name", "science"],
+    ["school", "score", ["sci"], "value", ["capture\\lookup","t1", 7]],
+    
+    ["school", "subject", ["hyg"], "id", "hyg"],
+    ["school", "subject", ["hyg"], "name", "Hygiene"],
+    ["school", "score", ["hyg"], "value", ["capture\\lookup","t1", 8]],
+   
+    ["school", "subject", ["env"], "id", "env"],
+    ["school", "subject", ["env"], "name", "Environmental"],
+    ["school", "score", ["env"], "value", ["capture\\lookup","t1", 9]],
+
+    ["school", "subject", ["ss"], "id", "ss"],
+    ["school", "subject", ["ss"], "name", "social studies"],
+    ["school", "score", ["ss"], "value", ["capture\\lookup","t1", 10]],
+ 
+    
+    ["school", "subject", ["cre"], "id", "cre"],
+    ["school", "subject", ["cre"], "name", "ChristianReligiousEducation"],
+    ["school", "score", ["cre"], "value", ["capture\\lookup","t1", 11]],
+
+    ["school", "subject", ["movt"], "id", "movt"],
+    ["school", "subject", ["movt"], "name", "movt"],
+    ["school", "score", ["movt"], "value", ["capture\\lookup","t1", 12]],
+    
+    ["school", "subject", ["music"], "id", "music"],
+    ["school", "subject", ["music"], "name", "Music"],
+    ["school", "score", ["music"], "value", ["capture\\lookup","t1", 13]],
+    
+    ["school", "subject", ["art"], "id", "art"],
+    ["school", "subject", ["art"], "name", "ArtandCraft"],
+    ["school", "score", ["art"], "value", ["capture\\lookup","t1", 14]],
+    
+    ["school", "subject", ["agr"], "id", "agr"],
+    ["school", "subject", ["agr"], "name", "Agriculture"],
+    ["school", "score", ["agr"], "value", ["capture\\lookup","t1", 15]],
+    
+    ["school", "subject", ["hsc"], "id", "hsc"],
+    ["school", "subject", ["hsc"], "name", "Health science"],
+    ["school", "score", ["hsc"], "value", ["capture\\lookup","t1", 16]],
+    
+    ["school", "subject", ["phe"], "id", "phe"],
+    ["school", "subject", ["phe"], "name", "PhysicalEducation"],
+    ["school", "score", ["phe"], "value", ["capture\\lookup","t1", 17]]
+]

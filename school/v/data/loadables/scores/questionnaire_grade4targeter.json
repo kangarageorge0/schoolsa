@@ -1,0 +1,124 @@
+[
+    ["school", "grade", [], "name", "4"],
+    ["school", "stream", [], "name", "B"],
+    ["school", "exam", [], "name", "Targeter Exam"],
+    ["school", "sitting", [], "date", "2020-12-16"],
+
+    ["school", "stage", [], "year", "2020"],
+    
+    ["school", "school", [], "id", "kaps"],
+    ["school", "school", [], "name", "Kiserian Adventist Primary School"],
+    ["school", "progress", [], "progress", null],
+    
+    {
+        "class_name":"\\capture\\csv",
+        "args":[
+            "t1", 
+            "/mutall_projects/school/v/data/loadables/scores/GRADE 4B TARGETER.csv",
+            [],
+            ",",  
+            -1,
+            5
+        ]
+    },
+
+    ["school", "student", [], "name", ["capture\\lookup","t1", 0]],
+    
+    ["school", "subject", ["maths"], "id", "maths"],
+    ["school", "subject", ["maths"], "name", "mathematics"],
+    ["school", "score", ["maths"], "value", ["capture\\lookup","t1", 1]],
+    ["school", "score", ["maths"], "percent", ["capture\\lookup","t1", 2]],
+    ["school", "score", ["maths"], "grade", ["capture\\lookup","t1", 3]],
+    
+    ["school", "subject", ["engl"], "id", "engl"],
+    ["school", "subject", ["engl"], "name", "english language"],
+    ["school", "score", ["engl"], "value", ["capture\\lookup","t1", 4]],
+    ["school", "score", ["engl"], "grade", ["capture\\lookup","t1", 5]], 
+    
+    ["school", "subject", ["n_o_w"], "id", "n_o_w"],
+    ["school", "subject", ["n_o_w"], "name", "no of words"],
+    ["school", "score", ["n_o_w"], "value", ["capture\\lookup","t1", 6]],
+    ["school", "score", ["n_o_w"], "grade", ["capture\\lookup","t1", 7]],
+    
+    ["school", "subject", ["com"], "id", "com"],
+    ["school", "subject", ["com"], "name", "comprehension"],
+    ["school", "score", ["com"], "value", ["capture\\lookup","t1", 8]],
+    ["school", "score", ["com"], "grade", ["capture\\lookup","t1", 9]],
+            
+    ["school", "subject", ["comp"], "id", "comp"],
+    ["school", "subject", ["comp"], "name", "composition"],
+    ["school", "score", ["comp"], "value", ["capture\\lookup","t1", 10]],
+    ["school", "score", ["comp"], "percent", ["capture\\lookup","t1", 11]],
+    ["school", "score", ["comp"], "grade", ["capture\\lookup","t1", 12]], 
+    
+    ["school", "subject", ["kus"], "id", "kus"],
+    ["school", "subject", ["kus"], "name", "kusoma"],
+    ["school", "score", ["kus"], "value", ["capture\\lookup","t1", 13]],
+    ["school", "score", ["kus"], "grade", ["capture\\lookup","t1", 14]],
+    
+    ["school", "subject", ["ufa"], "id", "ufa"],
+    ["school", "subject", ["ufa"], "name", "ufahamu"],
+    ["school", "score", ["ufa"], "value", ["capture\\lookup","t1", 15]],
+    ["school", "score", ["ufa"], "grade", ["capture\\lookup","t1", 16]],
+    
+    ["school", "subject", ["sar"], "id", "sar"],
+    ["school", "subject", ["sar"], "name", "sarufi"],
+    ["school", "score", ["sar"], "value", ["capture\\lookup","t1", 17]],
+    ["school", "score", ["sar"], "grade", ["capture\\lookup","t1", 18]],
+   
+    ["school", "subject", ["ins"], "id", "ins"],
+    ["school", "subject", ["ins"], "name", "insha"],
+    ["school", "score", ["ins"], "value", ["capture\\lookup","t1", 19]],
+    ["school", "score", ["ins"], "percent", ["capture\\lookup","t1",20]],
+    ["school", "score", ["ins"], "grade", ["capture\\lookup","t1", 21]],
+    
+    ["school", "subject", ["hsc"], "id", "hsc"],
+    ["school", "subject", ["hsc"], "name", "healthscience"],
+    ["school", "score", ["hsc"], "value", ["capture\\lookup","t1", 22]],
+    ["school", "score", ["hsc"], "percent", ["capture\\lookup","t1",23]],
+    ["school", "score", ["hsc"], "grade", ["capture\\lookup","t1", 24]],
+        
+    ["school", "subject", ["sci"], "id", "sci"],
+    ["school", "subject", ["sci"], "name", "ScienceandTechnology"],
+    ["school", "score", ["sci"], "value", ["capture\\lookup","t1", 25]],
+    ["school", "score", ["sci"], "percent", ["capture\\lookup","t1",26]],
+    ["school", "score", ["sci"], "grade", ["capture\\lookup","t1", 27]],
+    
+    ["school", "subject", ["music"], "id", "music"],
+    ["school", "subject", ["music"], "name", "Music"],
+    ["school", "score", ["music"], "value", ["capture\\lookup","t1", 28]],
+    ["school", "score", ["music"], "percent", ["capture\\lookup","t1", 29]],
+    ["school", "score", ["music"], "grade", ["capture\\lookup","t1", 30]],
+   
+    ["school", "subject", ["agri"], "id", "agri"],
+    ["school", "subject", ["agri"], "name", "Agriculture"],
+    ["school", "score", ["agri"], "value", ["capture\\lookup","t1", 31]],
+    ["school", "score", ["agri"], "percent", ["capture\\lookup","t1", 32]],
+    ["school", "score", ["agri"], "grade", ["capture\\lookup","t1", 33]],
+    
+    ["school", "subject", ["env"], "id", "env"],
+    ["school", "subject", ["env"], "name", "Environmental"],
+    ["school", "score", ["env"], "value", ["capture\\lookup","t1", 34]],
+    ["school", "score", ["env"], "percent", ["capture\\lookup","t1", 35]],
+    ["school", "score", ["env"], "grade", ["capture\\lookup","t1", 36]],
+    
+    ["school", "subject", ["cre"], "id", "cre"],
+    ["school", "subject", ["cre"], "name", "ChristianReligiousEducation"],
+    ["school", "score", ["cre"], "value", ["capture\\lookup","t1", 37]],
+    ["school", "score", ["cre"], "percent", ["capture\\lookup","t1", 38]],
+    ["school", "score", ["cre"], "grade", ["capture\\lookup","t1", 39]],
+    
+    ["school", "subject", ["art"], "id", "art"],
+    ["school", "subject", ["art"], "name", "ArtandCraft"],
+    ["school", "score", ["art"], "value", ["capture\\lookup","t1", 40]],
+    ["school", "score", ["art"], "percent", ["capture\\lookup","t1", 41]],
+    ["school", "score", ["art"], "grade", ["capture\\lookup","t1", 42]], 
+     
+    ["school", "subject", ["phe"], "id", "phe"],
+    ["school", "subject", ["phe"], "name", "PhysicalEducation"],
+    ["school", "score", ["phe"], "value", ["capture\\lookup","t1", 43]],
+    ["school", "score", ["phe"], "percent", ["capture\\lookup","t1", 44]],
+    ["school", "score", ["phe"], "grade", ["capture\\lookup","t1",45]]
+    
+    
+]

@@ -1,0 +1,60 @@
+[
+    ["school", "grade", [], "name", "7"],
+    ["school", "stream", [], "name", "Red"],
+    ["school", "exam", [], "name", "Wing003 Exam"],
+    ["school", "sitting", [], "date", "2019-3-28"],
+
+    ["school", "stage", [], "year", "2019"],  
+    ["school", "school", [], "id", "KAPS"],
+    ["school", "school", [], "name", "Kiserian Adventist Primary School"],
+    ["school", "progress", [], "progress", null],
+    
+    {
+        "class_name":"\\capture\\csv",
+        "args":[
+            "t1", 
+            "/mutall_projects/school/v/data/loadables/scores/WINGS003 GRADE 7 RED.csv",
+            [],
+            ",",  
+            -1,
+            4
+        ]
+    },
+
+    ["school", "student", [], "name", ["capture\\lookup","t1", 0]],
+    
+    ["school", "subject", ["eng"], "id", "eng"],
+    ["school", "subject", ["eng"], "name", "English"],
+    ["school", "score", ["eng"], "value", ["capture\\lookup","t1", 1]],
+    ["school", "subject", ["comp"], "id", "comp"],
+    ["school", "subject", ["comp"], "name", "composition"],
+    ["school", "score", ["comp"], "value", ["capture\\lookup","t1", 2]],
+    ["school", "score", ["eng"], "percent", ["capture\\lookup","t1", 3]],
+    
+    ["school", "subject", ["kis"], "id", "kiswa"],
+    ["school", "subject", ["kis"], "name", "Kiswahili"],
+    ["school", "score", ["kis"], "value", ["capture\\lookup","t1", 4]],
+    ["school", "subject", ["ins"], "id", "ins"],
+    ["school", "subject", ["ins"], "name", "insha"],
+    ["school", "score", ["ins"], "value", ["capture\\lookup","t1", 5]],
+    ["school", "score", ["kis"], "percent", ["capture\\lookup","t1", 6]],
+    
+    ["school", "subject", ["maths"], "id", "maths"],
+    ["school", "subject", ["maths"], "name", "Mathematics"],
+    ["school", "score", ["maths"], "value", ["capture\\lookup","t1", 7]],
+    
+    ["school", "subject", ["sci"], "id", "sci"],
+    ["school", "subject", ["sci"], "name", "science"],
+    ["school", "score", ["sci"], "value", ["capture\\lookup","t1", 8]],
+    
+    ["school", "subject", ["ss"], "id", "ss"],
+    ["school", "subject", ["ss"], "name", "social studies"],
+    ["school", "score", ["ss"], "value", ["capture\\lookup","t1", 9]],
+    
+    ["school", "subject", ["cre"], "id", "cre"],
+    ["school", "subject", ["cre"], "name", "christian religious education"],
+    ["school", "score", ["cre"], "value", ["capture\\lookup","t1", 10]],
+    ["school", "score", ["ss"], "percent", ["capture\\lookup","t1", 11]]
+    
+    
+]
